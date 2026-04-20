@@ -165,7 +165,9 @@ function displayExhibitions(exhibitionList) {
         <p>Exhibition End date <time datetime="${item.slutdato}">${item.slutdato}</time></p>
       </article>
     `;
-  }).join("");
+  }).join(""); // her samler vi det hele med join ("") til én samlet HTML-streng
+
+  exhibitionContainer.innerHTML= html;
 
 }
 
@@ -176,15 +178,3 @@ displayExhibitions(exhibitions);
 
 
 
-
-// Eksempel på en anden funktion:
-// Denne funktion lægger to tal sammen og viser resultatet i konsollen.
-
-// function addTwoNumbers(a, b)
-// {
-//     let result = a + b;
-//     console.log(result);
-// }
-
-// Her kaldes funktionen med tallene 100 og 200.
-// addTwoNumbers(100, 200);
